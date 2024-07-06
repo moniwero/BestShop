@@ -122,3 +122,82 @@ a {
 .btn--large {
   padding: 22px 155px;
 }
+
+.statistics {
+  margin-top: 100px;
+}
+
+.statistics-container {
+  max-width: 800px;
+  margin: 100px auto 120px;
+  display: flex;
+  justify-content: space-between;
+}
+
+h2 {
+  font-family: var(--font-raleway);
+  font-size: 2.25rem; /*36px:16px(domyślne) */
+  text-align: center;
+}
+
+.statistics-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  font-family: var(--font-raleway);
+}
+
+.statistics-ikon {
+  border-radius: 50%;
+  width: 63px;
+  height: 63px;
+  position: relative;
+}
+
+.statistics-img {
+  position: absolute;
+}
+
+.statistics-column:nth-child(1) .statistics-ikon {
+  background-color: var(--color-redish);
+}
+
+.statistics-column:nth-child(1) .statistics-img {
+  top: 0;
+  left: 45%;
+}
+
+.statistics-column:nth-child(2) .statistics-ikon {
+  background-color: var(--color-primary);
+}
+
+.statistics-column:nth-child(2) .statistics-img {
+  top: 22%;
+  left: 30%;
+}
+
+.statistics-column:nth-child(3) .statistics-ikon {
+  background-color: var(--color-green);
+}
+
+.statistics-column:nth-child(3) .statistics-img {
+  top: 9%;
+  left: 50%;
+}
+
+.statistics-number {
+  font-family: var(--font-raleway);
+  /*20px(według wzoru):16px(domyślne)=1.25rem */
+  font-size: 1.25rem; 
+  font-weight: 800;
+  letter-spacing: 0.298rem; /*5,96px:20px*/
+  margin-top: 13px;
+}
+
+.statistics-info {
+  color: var(--color-grey);
+  margin-top: 19px;
+  margin-bottom: 121px;
+}
