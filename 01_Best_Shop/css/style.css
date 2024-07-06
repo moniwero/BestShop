@@ -281,3 +281,30 @@ h2 {
   width: 386px;
   height: auto;
 }
+
+.benefits-box-phone {
+  --accent-color: var(--color-primary);
+  flex-direction: row-reverse;
+  padding: 0 20px 0 70px;
+}
+
+.benefits-box-phone .benefits-img::before {
+  content: "";
+  width: 320px;
+  height: 320px;
+  background-color: var(--accent-color);
+  display: block;
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  top: -20px;
+}
+
+.benefits-box-phone .benefits-img img {
+  width: 426px;
+  height: 328px;
+}
+
+.benefits-box-phone .benefits-text {
+  margin: 70px 0;
+}
