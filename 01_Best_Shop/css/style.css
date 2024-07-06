@@ -88,7 +88,7 @@ a {
 .opening-header {
   font-family: var(--font-raleway);
   /*49px:16px(bazowa wielkość)=3.0625 */
-  font-size: 3.0625rem;  
+  font-size: 3.0625rem;
 }
 
 .opening-heading {
@@ -105,7 +105,9 @@ a {
 .btn {
   color: var(--color-white);
   font-weight: bold;
-  font-size: 1rem/1,375rem;
+  font-size:
+    1rem/1,
+    375rem;
   display: inline-block;
   padding: 16px 65px;
   border-radius: var(--button-radius);
@@ -116,7 +118,6 @@ a {
   background-color: var(--color-primary);
   border-radius: 40px;
   box-shadow: 3px 10px 14px var(--color-primary-shadow);
-  
 }
 
 .btn--large {
@@ -190,7 +191,7 @@ h2 {
 .statistics-number {
   font-family: var(--font-raleway);
   /*20px(według wzoru):16px(domyślne)=1.25rem */
-  font-size: 1.25rem; 
+  font-size: 1.25rem;
   font-weight: 800;
   letter-spacing: 0.298rem; /*5,96px:20px*/
   margin-top: 13px;
@@ -199,5 +200,84 @@ h2 {
 .statistics-info {
   color: var(--color-grey);
   margin-top: 19px;
-  margin-bottom: 121px;
+}
+
+.benefits {
+  padding: 100px 0;
+  background-color: var(--color-light-grey);
+}
+
+.container-benefits {
+  padding: 0 100px;
+}
+
+.benefits-box {
+  background-color: var(--color-white);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 37px;
+  border: 1px solid #e8e9ed;
+  border-radius: 5px;
+}
+
+.benefits-title {
+  font-size: 2.25rem;
+  font-family: var(--font-raleway);
+  text-align: left;
+}
+
+.benefits-text {
+  max-width: 416px;
+  margin: 91px 36px;
+}
+
+.benefits-text:after {
+  content: "";
+  width: 332px;
+  height: 4px;
+  background-color: var(--accent-color);
+  display: block;
+  margin-top: 50px;
+}
+
+.benefits-article {
+  margin-top: 30px;
+  line-height: 1.375rem;
+}
+
+.benefits-img {
+  position: relative;
+}
+
+.benefits-img img {
+  position: relative;
+  z-index: 2;
+}
+
+.benefits-box-notebook {
+  --accent-color: var(--color-redish);
+}
+
+.benefits-box-notebook .benefits-img {
+  margin-right: 117px;
+  margin-bottom: 38px;
+}
+
+.benefits-box-notebook .benefits-img::before {
+  content: "";
+  width: 180px;
+  height: 180px;
+  background-color: var(--accent-color);
+  display: block;
+  border-radius: 40px;
+  position: absolute;
+  right: 0;
+  top: -40px;
+  transform: rotate(45deg);
+}
+
+.benefits-box-notebook .benefits-img img {
+  width: 386px;
+  height: auto;
 }
