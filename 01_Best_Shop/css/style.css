@@ -40,7 +40,7 @@ a {
   height: 100%;
 }
 
-.nav-logo {
+.logo {
   font-family: var(--font-raleway);
   font-size: 2rem;
   font-weight: 300;
@@ -577,4 +577,32 @@ h2 {
   padding: 20px 97px;
   align-self: flex-end;
   margin-top: 20px;
+}
+
+.footer {
+  box-shadow: 0 -5px 40px #00000029;
+  padding: 20px 0;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.footer-copy {
+  font-size: 0.6875rem;
+  line-height: 1.5rem;
+  color: var(--color-grey);
+  margin-top: 6px;
+}
+
+.footer-icons a:first-of-type {
+  margin-right: 25px;
 }
