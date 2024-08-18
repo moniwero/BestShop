@@ -11,6 +11,8 @@
   --font-open-sans: "Open Sans", sans-serif;
 }
 
+/* Base */
+
 * {
   box-sizing: border-box;
 }
@@ -28,6 +30,15 @@ a {
   width: 1352px;
 }
 
+.logo {
+  font-family: var(--font-raleway);
+  font-size: 2rem;
+  font-weight: 300;
+  color: var(--color-primary);
+}
+
+/* Header */
+
 .header {
   height: 70px;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
@@ -38,13 +49,6 @@ a {
   justify-content: space-between;
   align-items: center;
   height: 100%;
-}
-
-.logo {
-  font-family: var(--font-raleway);
-  font-size: 2rem;
-  font-weight: 300;
-  color: var(--color-primary);
 }
 
 .header-nav-list {
@@ -73,6 +77,8 @@ a {
 .nav-element:last-child {
   padding-right: 0;
 }
+
+/* Opening */
 
 .opening {
   display: flex;
@@ -123,6 +129,8 @@ a {
 .btn--large {
   padding: 22px 155px;
 }
+
+/* Statistic */
 
 .statistics {
   margin-top: 100px;
@@ -201,6 +209,8 @@ h2 {
   color: var(--color-grey);
   margin-top: 19px;
 }
+
+/* Benefits */
 
 .benefits {
   padding: 100px 0;
@@ -345,6 +355,8 @@ h2 {
   height: 208;
 }
 
+/* Pricing */
+
 .pricing {
   margin: 100px auto;
   display: flex;
@@ -452,6 +464,8 @@ h2 {
 .pricing-box-premium {
   --accent-color: var(--color-green);
 }
+
+/* Contact */
 
 .contact {
   padding: 80px 100px 100px;
@@ -578,6 +592,8 @@ h2 {
   align-self: flex-end;
   margin-top: 20px;
 }
+
+/* FOOTER */
 
 .footer {
   box-shadow: 0 -5px 40px #00000029;

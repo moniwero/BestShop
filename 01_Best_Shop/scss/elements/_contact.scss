@@ -1,0 +1,160 @@
+.contact {
+  padding: 80px 100px 100px;
+  display: flex;
+  justify-content: center;
+
+  @include mobile {
+    padding: 30px 15px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &-column {
+    width: 50%;
+
+    @include mobile {
+      width: 90%;
+    }
+
+    .contact-title {
+      font-size: 3.0625rem;
+      line-height: 3.6875rem;
+      text-align: left;
+
+      @include mobile {
+        font-size: 2.5rem;
+      }
+    }
+
+    .contact-instruction {
+      margin: 22px 0 42px;
+      font-size: 1rem;
+      line-height: 1.375rem;
+
+      @include mobile {
+        margin: 5px 0 35px;
+      }
+    }
+
+    .contact-adress {
+      display: flex;
+      justify-content: flex-start;
+      color: $color-grey;
+      align-items: center;
+
+      @include mobile {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .details {
+        color: $color-grey;
+        font-weight: 500;
+        text-decoration: none;
+
+        @include mobile {
+          margin-bottom: 10px;
+        }
+
+        &:first-of-type {
+          margin-right: 20px;
+        }
+
+        img {
+          margin-right: 10px;
+        }
+      }
+    }
+
+    .form {
+      display: flex;
+      flex-direction: column;
+
+      &-field {
+        display: flex;
+        flex-direction: column;
+
+        &:first-of-type {
+          margin-bottom: 42px;
+
+          @include mobile {
+            margin-top: 50px;
+          }
+        }
+      }
+
+      &-label {
+        font-weight: bold;
+        text-transform: uppercase;
+        color: $color-primary;
+        line-height: 0.9rem;
+        letter-spacing: 3px;
+        font-size: 0.6875rem;
+      }
+
+      &-input {
+        border: none;
+        border-bottom: 1px solid $color-grey;
+        background-color: transparent;
+        line-height: 2.625rem;
+      }
+
+      &-consent {
+        margin-top: 30px;
+      }
+
+      &-checkbox {
+        display: block;
+        position: relative;
+        padding-left: 35px;
+        margin-bottom: 12px;
+        cursor: pointer;
+        font-size: 1.375rem;
+
+        @include mobile {
+          padding-left: 25px;
+        }
+
+        input {
+          position: absolute;
+          opacity: 0;
+          cursor: pointer;
+          height: 0;
+          width: 0;
+        }
+
+        .checkbox {
+          position: absolute;
+          top: 0;
+          left: 0;
+          height: 25px;
+          width: 25px;
+          background-color: $color-white;
+          border: 1px solid $color-grey;
+          border-radius: 4px;
+        }
+
+        input:checked ~ .checkbox {
+          background-image: url(../assets/Checkmark.svg);
+          background-position: center;
+          background-size: 50%;
+          background-repeat: no-repeat;
+        }
+
+        .consent-text {
+          margin: 0 10px;
+          font-size: 0.75rem;
+          color: $color-grey;
+          line-height: 17px;
+        }
+      }
+    }
+
+    .form .btn {
+      font-size: 0.8125rem;
+      padding: 20px 97px;
+      align-self: flex-end;
+      margin-top: 20px;
+    }
+  }
+}

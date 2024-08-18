@@ -1,0 +1,89 @@
+.statistics {
+  margin-top: 100px;
+
+  @include mobile {
+    margin-top: 50px;
+  }
+
+  &-container {
+    max-width: 800px;
+    margin: 100px auto 120px;
+    display: flex;
+    justify-content: space-between;
+
+    @include mobile {
+      margin: 35px auto 50px;
+      align-items: center;
+      flex-direction: column;
+    }
+  }
+
+  &-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    font-family: $font-raleway;
+
+    @include mobile {
+      margin-bottom: 35px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &-ikon {
+    border-radius: 50%;
+    width: 63px;
+    height: 63px;
+    position: relative;
+  }
+
+  &-img {
+    position: absolute;
+  }
+
+  &-column:nth-child(1) &-ikon {
+    background-color: $color-redish;
+  }
+
+  &-column:nth-child(1) &-img {
+    top: 0;
+    left: 45%;
+  }
+
+  &-column:nth-child(2) &-ikon {
+    background-color: $color-primary;
+  }
+
+  &-column:nth-child(2) &-img {
+    top: 22%;
+    left: 30%;
+  }
+
+  &-column:nth-child(3) &-ikon {
+    background-color: $color-green;
+  }
+
+  &-column:nth-child(3) &-img {
+    top: 9%;
+    left: 50%;
+  }
+
+  &-number {
+    font-family: $font-raleway;
+    /*20px(według wzoru):16px(domyślne)=1.25rem */
+    font-size: 1.25rem;
+    font-weight: 800;
+    letter-spacing: 0.298rem; /*5,96px:20px*/
+    margin-top: 13px;
+  }
+
+  &-info {
+    color: $color-grey;
+    margin-top: 19px;
+  }
+}

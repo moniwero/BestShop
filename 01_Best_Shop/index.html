@@ -11,31 +11,37 @@
       rel="stylesheet"
     />
 
-    <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="scss/main.scss" />
   </head>
   <body>
     <header class="header">
-      <div class="header-container container">
-        <a href="" class="logo">BestShop</a>
+      <div class="header__container container">
+        <a href="#" class="logo">BestShop</a>
         <nav>
-          <ul class="header-nav-list">
-            <li class="nav-element">
-              <a href="#why-us" class="nav-link">WHY US</a>
+          <input type="checkbox" class="menu__btn" id="menu__btn" />
+          <label for="menu__btn" class="menu__toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+          <ul class="header__nav">
+            <li class="nav__element">
+              <a href="#why-us" class="nav__link">Why us</a>
             </li>
-            <li class="nav-element">
-              <a href="#benefits" class="nav-link">BENEFITS</a>
+            <li class="nav__element">
+              <a href="#benefits" class="nav__link">Benefits</a>
             </li>
-            <li class="nav-element">
-              <a href="#prices" class="nav-link">PRICES</a>
+            <li class="nav__element">
+              <a href="#prices" class="nav__link">Prices</a>
             </li>
-            <li class="nav-element">
-              <a href="#contact" class="nav-link">CONTACT</a>
+            <li class="nav__element">
+              <a href="#contact" class="nav__link">Contact</a>
             </li>
           </ul>
         </nav>
       </div>
     </header>
+
     <section class="opening">
       <div class="opening-content">
         <h1 class="opening-header">Sell More!</h1>
@@ -88,7 +94,7 @@
     </section>
 
     <section class="benefits">
-      <div class="container container-benefits">
+      <div class="benefits-container container">
         <div class="benefits-box benefits-box-notebook">
           <div class="benefits-text">
             <h2 class="benefits-title">Be always first</h2>
@@ -130,6 +136,7 @@
               </p>
             </div>
           </div>
+
           <div class="benefits-box benefits-box-img">
             <img src="assets/Trumpet.png" alt="trumpet" />
           </div>
@@ -152,7 +159,7 @@
             <li class="pricing-item pricing-item-not">Two years licence</li>
             <li class="pricing-item pricing-item-not">Full support</li>
           </ul>
-          <a href="#" class="btn btn--primary">Begin</a>
+          <a href="#" class="btn btn--primary btn--redish">Begin</a>
         </div>
 
         <div class="pricing-box pricing-box-professional">
@@ -184,7 +191,7 @@
             <li class="pricing-item">Two years license</li>
             <li class="pricing-item">Full support</li>
           </ul>
-          <a href="#" class="btn btn--primary">Begin</a>
+          <a href="#" class="btn btn--primary btn--green">Begin</a>
         </div>
       </div>
     </section>
